@@ -20,5 +20,22 @@ namespace Aplikacja_1_Wypozyczalnia_Sklep_Gier
         {
             InitializeComponent();
         }
+
+        private void btnOpenLogin_Click(object sender, RoutedEventArgs e)
+        {
+            LoginScreen login = new LoginScreen();
+
+            login.Show();
+
+            this.Hide();
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
+
+
+
 }

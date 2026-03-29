@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aplikacja_1_Wypozyczalnia_Sklep_Gier"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="500" Width="800">
 
+    <Grid Background="MediumPurple">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Background="White">
+
+            <TextBlock Text="GaMeB0X" FontFamily="Bell MT" Foreground="Black"
+                   FontSize="50" FontWeight="Bold" 
+                   Margin="10,10,10,10" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Gry na platformy: PC/PlayStation/Xbox" FontFamily="Bell MT"
+                   FontSize="25" FontWeight="Bold" Foreground="Black" 
+                   Margin="10,10,10,10" HorizontalAlignment="Center"/>
+            <Button x:Name="btnOpenLogin" Content="Zaloguj się" FontFamily="Bell MT"
+                Width="300" Height="50" Margin="0,5" FontSize="25"
+                Background="MediumPurple" Foreground="Black" FontWeight="Bold"
+                Click="btnOpenLogin_Click"/>
+
+            <Button x:Name="btnExit" Content="Wyjdź z aplikacji" FontFamily="Bell MT"
+                Width="300" Height="50" Margin="0,5" FontSize="25" FontWeight="Bold"
+                Background="MediumPurple" 
+                Click="btnExit_Click"/>
+
+        </StackPanel>
     </Grid>
+
 </Window>
